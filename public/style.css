@@ -60,15 +60,16 @@ main {
 }
 
 .install {
-    text-align: center;
-}
-
-.install h2 {
-    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .store {
-    width: 300px;
+    /*width: 250px;*/
+    height: 75px;
 }
 
 .splide {
