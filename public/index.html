@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="style.css"/>
+    <!-- site source: https://github.com/rantstats/rantstats.com -->
 
     <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide-core.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/themes/splide-default.min.css"/>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/themes/splide-default.min.css"/>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFEQRL7TTR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-ZFEQRL7TTR');
+    </script>
 </head>
 <body>
 <header>
@@ -50,19 +65,20 @@
 <footer>
     <p><a href="https://twitter.com/stevencrader" target="_blank">By Steven Crader</a></p>
     <p><a href="/bookmarklet">Legacy Bookmarklet</a></p>
+    <p><a href="https://github.com/rantstats/rantstats-extension/issues">Report Bug</a></p>
 </footer>
 </body>
 
 <script>
-  document.addEventListener( 'DOMContentLoaded', function() {
-    const splide = new Splide( '.splide', {
-        type: 'loop',
-        pagination: true,
-        autoplay: true,
-        interval: 3000,
-        width: '80%'
+    document.addEventListener('DOMContentLoaded', function () {
+        const splide = new Splide('.splide', {
+            type: 'loop',
+            pagination: true,
+            autoplay: true,
+            interval: 3000,
+            width: '80%'
+        });
+        splide.mount();
     });
-    splide.mount();
-  } );
 </script>
 </html>
