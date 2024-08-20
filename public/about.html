@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <title>About | Rant Stats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/style.css"/>
+    <!-- site source: https://github.com/rantstats/rantstats.com -->
+
+    <meta name="title" content="About Rant Stats">
+    <meta name="description" content="About the Rant Stats browser extension.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rantstats.com/about">
+    <meta property="og:title" content="About Rant Stats">
+    <meta property="og:description" content="About the Rant Stats browser extension.">
+    <meta property="og:image" content="/images/preview.png"/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@rantstats_com">
+    <meta name="twitter:creator" content="@stevencrader">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZFEQRL7TTR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-ZFEQRL7TTR');
+    </script>
+</head>
+<body>
+<header>
+    <h1>About</h1>
+</header>
+<main id="content">
+    <p>If you want to support me:</p>
+    <ul>
+        <li><a href="https://www.paypal.me/stevencrader" target="_blank">PayPal</a></li>
+        <li><a href="https://www.cash.app/$craders" target="_blank">$craders</a></li>
+        <li><a href="https://venmo.com/code?user_id=467277291978752568&created=1654152122" target="_blank">Venmo</a></li>
+        <li><a href="https://x.com/stevencrader" target="_blank">X (Rant Stats)</a></li>
+        <li><a href="https://x.com/rantstats_com" target="_blank">X (Me)</a></li>
+    </ul>
+</main>
+<footer>
+    <p><a href="https://github.com/rantstats/rantstats-extension/issues">Report Bug</a></p>
+</footer>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const splide = new Splide('.splide', {
+            type: 'loop',
+            pagination: true,
+            autoplay: true,
+            interval: 3000,
+            width: '80%'
+        });
+        splide.mount();
+    });
+</script>
+</html>

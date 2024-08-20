@@ -234,7 +234,7 @@ const ecInsertHtml = () => {
             </header>
             <div class="external-chat-list" id="external-chat-list" data-sort-order="0"></div>
             <footer>
-                <p><a href="https://twitter.com/stevencrader" target="_blank">By Steven Crader</a></p>
+                <p><a href="https://x.com/stevencrader" target="_blank">By Steven Crader</a></p>
                 <p><a href="https://rantstats.com/" target="_blank">Rant Stats</a></p>
                 <p><a href="#" id="download-csv">Export to CSV</a></p>
             </footer>
